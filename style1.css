@@ -1,0 +1,191 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(circle at 10% 15%, #ffd6e7 0%, transparent 30%),
+        radial-gradient(circle at 90% 85%, #c8e7ff 0%, transparent 32%),
+        linear-gradient(135deg, #eee2ff, #fff0f7, #dff4ff);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #57436f;
+}
+
+/* KARTU FORM */
+
+.login-container,
+.signup-container,
+.registrasi-container {
+    width: 100%;
+    max-width: 390px;
+    padding: 30px;
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #fff7fc 45%,
+        #f1eaff
+    );
+    border: 2px solid #ffffff;
+    border-radius: 28px;
+    box-shadow:
+        0 12px 30px rgba(129, 94, 177, 0.18),
+        0 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* JUDUL */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 29px;
+    color: #8c60c9;
+    text-shadow: 2px 2px 0 #f4d9ff;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #c06e9e;
+    font-size: 14px;
+}
+
+/* LABEL */
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #72518f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* INPUT */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 17px;
+    border: 2px solid #e4d6ff;
+    border-radius: 13px;
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f7f1ff
+    );
+    color: #57436f;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s;
+}
+
+/* WARNA INPUT SAAT DIPILIH */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #b77be8;
+    background: #fff0f8;
+    box-shadow: 0 0 0 4px #f7dff0;
+}
+
+/* TEXTAREA */
+
+textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+/* TOMBOL */
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(
+        110deg,
+        #a77be8,
+        #e99ac5,
+        #91c9f4
+    );
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 12px #dbc8f0;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: linear-gradient(
+        110deg,
+        #8c60d0,
+        #dc79ad,
+        #6eb5ed
+    );
+}
+
+/* TEKS BAGIAN BAWAH */
+
+.footer-text {
+    margin-top: 22px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #8b7a9c;
+    font-size: 13px;
+}
+
+a {
+    color: #d66da5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8060cf;
+    text-decoration: underline;
+}
+
+/* INPUT BERJAJAR */
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-row > div {
+    flex: 1;
+    min-width: 0;
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 400px) {
+    .login-container,
+    .signup-container,
+    .registrasi-container {
+        padding: 23px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .form-row {
+        gap: 8px;
+    }
+}
