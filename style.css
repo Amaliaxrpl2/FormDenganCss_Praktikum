@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    padding: 25px 15px;
+    padding: 35px 20px;
     min-height: 100vh;
 
     display: flex;
@@ -17,6 +17,7 @@ body {
 
     font-family: Arial, sans-serif;
     background-color: #FFFFFF;
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@ body {
 
 /* =========================
    BACKGROUND LOGIN
+   ANIME SUNSET
 ========================= */
 
 body:has(.login-container) {
@@ -33,6 +35,7 @@ body:has(.login-container) {
 
 /* =========================
    BACKGROUND SIGN UP
+   ANIME NIGHT
 ========================= */
 
 body:has(.signup-container) {
@@ -47,38 +50,52 @@ body:has(.signup-container) {
 .signup-container,
 .registrasi-container {
     width: 100%;
-    max-width: 380px;
-    padding: 25px;
+    max-width: 460px;
+    padding: 35px;
 
-    border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.20);
 }
 
-/* LOGIN - KREM SUNSET */
+/* =========================
+   LOGIN
+   KREM SUNSET TRANSPARAN
+========================= */
 
 .login-container {
-    background: rgba(255, 239, 216, 0.72);
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 239, 216, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
 
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
 }
 
-/* SIGN UP - BIRU MALAM */
+/* =========================
+   SIGN UP
+   BIRU MALAM TRANSPARAN
+========================= */
 
 .signup-container {
-    background: rgba(35, 47, 85, 0.70);
+    background: rgba(35, 47, 85, 0.62);
+
     border: 1px solid rgba(230, 235, 255, 0.75);
 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
 
-/* REGISTRASI - PUTIH */
+/* =========================
+   REGISTRASI
+   PUTIH BERSIH
+========================= */
 
 .registrasi-container {
     background: #FFFFFF;
+
     border: 1px solid #E5E5E5;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* =========================
@@ -87,8 +104,10 @@ body:has(.signup-container) {
 
 h1 {
     margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 25px;
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    text-align: center;
 }
 
 .login-container h1 {
@@ -103,10 +122,17 @@ h1 {
     color: #333333;
 }
 
+/* =========================
+   SUBTITLE
+========================= */
+
 .subtitle {
     margin-top: -10px;
-    margin-bottom: 20px;
-    font-size: 13px;
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .login-container .subtitle {
@@ -127,8 +153,10 @@ h1 {
 
 label {
     display: block;
-    margin-bottom: 6px;
-    font-size: 13px;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -152,32 +180,37 @@ input,
 select,
 textarea {
     display: block;
+
     width: 100%;
-    padding: 11px;
-    margin-bottom: 12px;
+    padding: 14px;
+    margin-bottom: 17px;
 
     border: 1px solid #D8D8D8;
-    border-radius: 6px;
+    border-radius: 7px;
 
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.90);
     color: #333333;
 
     font-family: Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
+
+/* INPUT LOGIN */
 
 .login-container input,
 .login-container select,
 .login-container textarea {
     border-color: rgba(255, 255, 255, 0.9);
-    background: rgba(255, 250, 241, 0.65);
+    background: rgba(255, 250, 241, 0.72);
 }
+
+/* INPUT SIGN UP */
 
 .signup-container input,
 .signup-container select,
 .signup-container textarea {
     border-color: rgba(255, 255, 255, 0.75);
-    background: rgba(230, 235, 255, 0.28);
+    background: rgba(230, 235, 255, 0.25);
     color: #FFFFFF;
 }
 
@@ -185,6 +218,8 @@ textarea {
 .signup-container textarea::placeholder {
     color: #E0E5F5;
 }
+
+/* EFEK INPUT */
 
 input:focus,
 select:focus,
@@ -199,44 +234,58 @@ textarea:focus {
     outline-color: #B8C6FF;
 }
 
+.registrasi-container input:focus,
+.registrasi-container select:focus,
+.registrasi-container textarea:focus {
+    outline-color: #B6A0D5;
+}
+
 textarea {
-    min-height: 75px;
+    min-height: 90px;
     resize: vertical;
 }
 
 /* =========================
-   TOMBOL
+   TOMBOL UMUM
 ========================= */
 
 button {
+    display: block;
+
     width: 100%;
-    padding: 12px;
-    margin-top: 5px;
+    padding: 14px;
+    margin-top: 8px;
 
     border: none;
-    border-radius: 7px;
+    border-radius: 8px;
 
-    font-size: 14px;
     color: #FFFFFF;
-    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 
-    transition: 0.2s;
+    cursor: pointer;
+    transition: background-color 0.25s;
 }
 
-/* Tombol Login - Sunset */
+/* TOMBOL LOGIN
+   ORANYE SUNSET
+========================= */
 
 .login-container button {
-    background: rgba(190, 111, 72, 0.92);
+    background: rgba(190, 111, 72, 0.95);
 }
 
 .login-container button:hover {
     background: #A95E3E;
 }
 
-/* Tombol Sign Up - Midnight Blue */
+/* TOMBOL SIGN UP
+   BIRU MIDNIGHT
+========================= */
 
 .signup-container button {
-    background: rgba(89, 108, 161, 0.92);
+    background: rgba(89, 108, 161, 0.95);
+
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
@@ -244,7 +293,9 @@ button {
     background: #46588F;
 }
 
-/* Tombol Registrasi - Ungu */
+/* TOMBOL REGISTRASI
+   UNGU PASTEL
+========================= */
 
 .registrasi-container button {
     background: #A58AC7;
@@ -259,9 +310,12 @@ button {
 ========================= */
 
 .footer-text {
-    margin-top: 18px;
+    margin-top: 22px;
     margin-bottom: 0;
-    font-size: 13px;
+
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .login-container .footer-text {
@@ -282,6 +336,7 @@ button {
 
 a {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .login-container a {
@@ -302,7 +357,7 @@ a {
 
 .form-row {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .form-row > div {
@@ -311,22 +366,56 @@ a {
 }
 
 /* =========================
+   TAMPILAN TABLET
+========================= */
+
+@media (min-width: 600px) {
+    .login-container,
+    .signup-container,
+    .registrasi-container {
+        max-width: 480px;
+        padding: 40px;
+    }
+}
+
+/* =========================
    TAMPILAN HP
 ========================= */
 
 @media (max-width: 400px) {
+    body {
+        padding: 20px 14px;
+    }
+
     .login-container,
     .signup-container,
     .registrasi-container {
-        padding: 20px;
+        max-width: 100%;
+        padding: 24px;
     }
 
     h1 {
-        font-size: 23px;
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 13px;
     }
 
     .form-row {
         gap: 8px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 13px;
+        font-size: 15px;
     }
 }
 /* =========================
